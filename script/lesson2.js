@@ -4,3 +4,5 @@ let inputPrice = prompt("Enter the price tag (e.g., $49.99):");
 let cleanPrice = parseFloat(inputPrice.replace('$', ''));
 // Step 3: Reduce the price by 10 percent
 let discountedPrice = cleanPrice - (cleanPrice * 0.10);
+// Step 4: Print out the new price in a template literal using console.log
+console.log(`Your new price is: $${discountedPrice.toFixed(2)}`);
